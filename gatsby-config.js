@@ -18,6 +18,14 @@ module.exports = {
         path: `${__dirname}/content`,
       },
     },
+    {
+      resolve: `gatsby-source-youtube`,
+      options: {
+        channelId: process.env.YOUTUBE_CHANNEL_ID,
+        apiKey: process.env.YOUTUBE_API_KEY,
+        maxVideos: 1000 // Defaults to 50
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-webpack-size`,

@@ -91,4 +91,8 @@ export default createGlobalStyle`
   p {
     margin-bottom: 2rem;
   }
+
+  .modal {
+    background: hsla(0, 0%, 0%, 0.66) Important! ;
+  }
 `;

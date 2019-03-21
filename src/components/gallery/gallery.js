@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Item from 'components/gallery/item';
+import Modal from 'components/Modal';
 import { Container } from './gallery.css';
 
 const Gallery = ({ items }) => (
   <Container>
     {items.map((item, i) => (
-      <Item {...item} key={i} />
+      <Modal {...item.node} key={i} />
     ))}
   </Container>
 );

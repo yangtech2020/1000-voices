@@ -32,6 +32,7 @@
     "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-plugin-webpack-size": "^0.0.3",
     "gatsby-source-filesystem": "^2.0.25",
+    "gatsby-source-youtube": "iyeraravind/gatsby-source-youtube",
     "gatsby-transformer-json": "^2.1.10",
     "gatsby-transformer-remark": "^2.3.3",
     "gatsby-transformer-sharp": "^2.1.17",
@@ -41,6 +42,7 @@
     "react-dom": "^16.7.0",
     "react-helmet": "^5.2.0",
     "react-pose": "^4.0.5",
+    "slug": "^1.0.0",
     "styled-components": "^4.1.3"
   },
   "devDependencies": {
