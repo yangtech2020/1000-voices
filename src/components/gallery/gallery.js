@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Modal from 'components/Modal';
+import Modal from 'components/modal';
 import { Container } from './gallery.css';
 
 const Gallery = ({ items }) => (
