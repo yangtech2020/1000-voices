@@ -8,7 +8,7 @@ import BREAKPOINTS from 'constants/breakpoints';
 //   font-size: 1.6rem;
 // `};
 //
-// ${MEDIA.MIN_TABLET`
+// ${MEDIA.IPAD`
 //   display: flex;
 // `};
 //

@@ -21,7 +21,7 @@ export const Text = styled.span`
   }};
   line-height: 1.2;
 
-  ${MEDIA.TABLET`
+  ${MEDIA.IPAD`
     font-size: ${({ size }) => () => {
       switch (size) {
         case 'large':

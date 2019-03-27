@@ -1,29 +1,13 @@
 import styled from 'styled-components';
 import MEDIA from 'helpers/mediaTemplates';
 
-export const Title = styled.span`
-  display: block;
-  font-size: 2rem;
-  font-weight: 500;
-  margin: 2rem 2rem 1rem;
-`;
-
-export const Copy = styled.p`
-  color: #757575;
-  margin: 0 2rem 2rem;
-
-  ${MEDIA.TABLET`
-    margin-bottom: 4rem;
-  `};
-`;
-
 export const Button = styled.button`
   -webkit-appearance: none;
   background-color: #fff;
   border-radius: 5px;
+  border: 1px solid #ddd;
   border: none;
   color: #757575;
-  border: 1px solid #ddd;
   cursor: pointer;
   font-family: inherit;
   font-size: 1.3rem;
@@ -61,4 +45,44 @@ export const Close = styled.button`
   top: 0;
   right: 0;
   color: #fff;
+`;
+
+export const Location = styled.span`
+  color: #000000;
+  display: block;
+  font-family: Futura;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 .5rem;
+
+  ${MEDIA.IPAD`
+    margin-bottom: 4rem;
+  `};
+`;
+
+export const Name = styled.span`
+  color: #000000;
+  display: block;
+  font-family: Futura;
+  font-size: 32px;
+  font-weight: 500;
+  margin: 1.25rem .5rem;
+`;
+
+export const Tags = styled.div`
+  color: #8B8B8B;
+  font-family: Futura;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 500;
+  padding: 1.25rem 0rem 0rem .5rem;
+`;
+
+export const Thumbnail = styled.img`
+  cursor: pointer;
+  boxSizing: border-box;
+  height: 200px;
+  width: 300px;
+  border: 1px solid #979797;
+  boxShadow: 0 2px 4px 0 rgba(0,0,0,0.5);
 `;

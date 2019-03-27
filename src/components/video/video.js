@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Close, Copy, Title } from './modal.css';
+import { Close, Location, Tags, Thumbnail, Name } from './video.css';
 import { Dialog } from '@reach/dialog';
 import VisuallyHidden from '@reach/visually-hidden';
 
@@ -9,8 +9,8 @@ import './reach.override.styles.css';
 
 // This component is here only to to showcase the
 // React Context integration. No need to keep this if
-// you don't require a Modal in your project.
-export default class Modal extends Component {
+// you don't require a Video in your project.
+export default class Video extends Component {
 
   constructor(props) {
     super(props);
@@ -70,11 +70,15 @@ export default class Modal extends Component {
     // debugger; // eslint-disable-line
     return (
       <>
-        <div style={{ cursor: 'pointer' }} onClick={this.show} onKeyDown={this.hide} role="button" tabIndex={0}>
-          <img style={{ maxWidth: '340px', maxHeight: '240px' }} src={thumbnail.url} alt={title} />
-          <figcaption style={{ maxWidth: '340px' }}>
-            <Title>{title}</Title>
-            <Copy>{description}</Copy>
+        <div style={{ 
+          cursor: 'pointer' ,
+          boxSizing: 'border-box',
+          }} onClick={this.show} onKeyDown={this.hide} role="button" tabIndex={0}>
+          <Thumbnail src={thumbnail.url} alt={title} />
+          <figcaption style={{ maxWidth: '281px' }}>
+            <Name>Justin</Name>
+            <Location>Des Moines, IA</Location>
+            <Tags>#TAGS, #TAGS, #TAGS</Tags>
           </figcaption>
         </div>
 
@@ -89,7 +93,7 @@ export default class Modal extends Component {
               position: "relative",
               paddingBottom: "56.25%" /* 16:9 */,
               paddingTop: 25,
-              height: 0
+              height: 0,
             }} >
             <iframe
               title={title}
@@ -111,7 +115,7 @@ export default class Modal extends Component {
   }
 }
 
-Modal.propTypes = {
+Video.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string, 
   thumbnail: PropTypes.object.isRequired,
