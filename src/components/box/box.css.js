@@ -5,10 +5,7 @@ export const Container = styled.div`
   min-height: 37rem;
   background-color: #98c2e7;
   margin-bottom: 2rem;
-
-  ${MEDIA.DESKTOP`
-    padding: 12rem 0rem 0rem 12rem;
-  `}
+  padding: 12rem 0rem 0rem 12rem;
 
   ${MEDIA.IPAD`
     padding: 2rem;
@@ -53,10 +50,7 @@ export const WhatWould = styled.div`
   line-height: 32px;
   max-width: 687px;
   padding-bottom: 2rem;
-
-  ${MEDIA.DESKTOP`
-    padding-top: 2rem;
-  `}
+  padding-top: 2rem;
 
   ${MEDIA.IPAD`
     padding-top: 0rem;
@@ -70,11 +64,8 @@ export const YourVoice = styled.div`
   font-weight: bold;
   line-height: 47px;
   max-width: 622px;
-
-  ${MEDIA.DESKTOP`
-    padding-bottom: 2rem;
-  `}
-
+  padding-bottom: 2rem;
+  
   ${MEDIA.IPAD`
     text-align: center;
   `}
