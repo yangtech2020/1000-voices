@@ -1,30 +1,45 @@
 import styled from 'styled-components';
+import MEDIA from 'helpers/mediaTemplates';
 
 export const Container = styled.div`
-  padding: 12rem 0rem 0rem 12rem;
-  height: 37rem;
-  background-color: #98C2E7;
+  min-height: 37rem;
+  background-color: #98c2e7;
+  margin-bottom: 2rem;
+
+  ${MEDIA.DESKTOP`
+    padding: 12rem 0rem 0rem 12rem;
+  `}
+
+  ${MEDIA.IPAD`
+    padding: 2rem;
+  `}
 `;
 
 export const Submit = styled.div`
-  background-color: #EA364C;
-  height: 69px;	
-  width: 261px;	
+  background-color: #ea364c;
+  height: 69px;
+  width: 261px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
   &:hover {
     cursor: pointer;
   }
+
+  ${MEDIA.IPAD`
+    margin: 0 auto;
+  `}
 `;
 
 export const SubmitText = styled.div`
-  height: 26px;
-  width: 210px;
-  color: #FEFFFE;
+  min-height: 26px;
+  min-width: 210px;
+  color: #fefffe;
   font-family: Futura;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
-  line-height: 27px;	
+  line-height: 27px;
   padding-top: 2rem;
   text-align: center;
   margin: 0 auto;
@@ -35,19 +50,32 @@ export const WhatWould = styled.div`
   font-family: Futura;
   font-size: 24px;
   font-weight: bold;
-  height: 62px;
   line-height: 32px;
-  padding-bottom: 1rem;
-  text-align: center;
-  width: 687px;
+  max-width: 687px;
+  padding-bottom: 2rem;
+
+  ${MEDIA.DESKTOP`
+    padding-top: 2rem;
+  `}
+
+  ${MEDIA.IPAD`
+    padding-top: 0rem;
+    text-align: center;
+  `}
 `;
 export const YourVoice = styled.div`
-  color: #FEFFFF;
+  color: #feffff;
   font-family: Futura;
   font-size: 36px;
   font-weight: bold;
-  height: 92px;
   line-height: 47px;
-  padding-bottom: 4rem;
-  width: 622px;
+  max-width: 622px;
+
+  ${MEDIA.DESKTOP`
+    padding-bottom: 2rem;
+  `}
+
+  ${MEDIA.IPAD`
+    text-align: center;
+  `}
 `;

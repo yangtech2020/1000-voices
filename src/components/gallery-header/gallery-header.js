@@ -1,7 +1,7 @@
 import React from 'react';
 import { BigText, Container } from './gallery-header.css';
 
-const Gallery = ({ items }) => (
+const Gallery = () => (
   <Container>
     <BigText>Featured Submissions</BigText>
   </Container>
