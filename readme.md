@@ -1,3 +1,22 @@
+# 1000 Voices for Andrew Yang
+
+## Developing 1000 Voices
+
+1. clone this directory
+2. set up YOUTUBE_API_KEY and YOUTUBE_CHANNEL_ID environment variables by adding them to your .bashrc or similar file
+    1. create a YOUTUBE_API_KEY here https://developers.google.com/youtube/v3/getting-started
+    2. pick a YOUTUBE_CHANNEL_ID (Andrew's is UCriIuQZpMi6gEt_2P7xKCww)
+3. run `make develop`
+4. open a browser and point to http://localhost:8000/. 
+
+***
+***
+***
+***
+***
+***
+
+
 <p align="center">
   <a href="https://github.com/fabe/gatsby-universal">
     <img
