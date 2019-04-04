@@ -22,13 +22,17 @@ const AnimatedContainer = posed.div({
   },
 });
 
-const Header = ({ title }) => (
+const Header = ({ title, shortTitle }) => (
   <AnimatedContainer>
     <Container>
       <Link to="/">
-        <Title as="h1">{title}</Title>
+        <Title as="h1" className="fullTitle">
+          {title}
+        </Title>
+        <Title as="h1" className="shortTitle">
+          {shortTitle}
+        </Title>
       </Link>
-
       <Nav />
     </Container>
   </AnimatedContainer>
@@ -36,6 +40,7 @@ const Header = ({ title }) => (
 
 Header.propTypes = {
   title: PropTypes.string.isRequired,
+  shortTitle: PropTypes.string.isRequired,
 };
 
 export default Header;
